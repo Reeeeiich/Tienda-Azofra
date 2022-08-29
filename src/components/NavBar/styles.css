@@ -1,15 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Qwitcher+Grypen:wght@700&display=swap');
+
 .container-fluid{
     background-color: wheat;
 }
 .navbar-brand{
+    font-family: 'Qwitcher Grypen', cursive;
     color: orangered;
-    font-size: 20px;
+    font-size: 40px;
+}
+
+#navbarNavDropdown{
+    justify-content: flex-end;
 }
 .nav-link{
+    font-family: 'DM Sans', sans-serif;
     color: salmon;
     font-size: 18px;
     padding: 15px;
     margin: 12px;
 }
 
-
+.labial_icon{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
