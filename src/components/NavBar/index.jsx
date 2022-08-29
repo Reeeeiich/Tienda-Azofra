@@ -6,7 +6,7 @@ const NavBar= ()=> {
         <>
         <nav className="navbar navbar-expand-lg bg-light">
             <div className="container-fluid">
-            <img className="labial_icon" src="https://img.icons8.com/plasticine/100/000000/lipstick.png"/> <a className="navbar-brand" href="#">Once upon a time...</a> 
+            <img className="labial_icon" src="https://img.icons8.com/plasticine/100/000000/lipstick.png"/> <a className="navbar-brand" href="#">Once upon a dream</a> 
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
                 </button>
