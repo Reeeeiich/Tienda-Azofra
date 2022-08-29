@@ -1,12 +1,24 @@
 import './App.css';
+import NavBar from './components/NavBar';
 
-let numeroClase = 20;
+
 function App() {
+  let numeroClase = 20;
+
+
   return (
-    <div className="App">
-      <p> Bienvenidos a la clase {numeroClase}</p>
-    </div>
-  );
+    <>
+      <NavBar/>
+
+      <div className="App">
+        <p> Bienvenidos a la clase {numeroClase}</p>
+      </div>
+
+    </>
+);
+    
+    
+
 }
 
 export default App;

@@ -1,0 +1,15 @@
+.container-fluid{
+    background-color: wheat;
+}
+.navbar-brand{
+    color: orangered;
+    font-size: 20px;
+}
+.nav-link{
+    color: salmon;
+    font-size: 18px;
+    padding: 15px;
+    margin: 12px;
+}
+
+
