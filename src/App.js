@@ -1,24 +1,15 @@
 import './App.css';
 import NavBar from './components/NavBar';
+import ItemListContainer from './containers/ItemListContainer';
 
 
 function App() {
-  let numeroClase = 20;
-
-
   return (
     <>
       <NavBar/>
-
-      <div className="App">
-        <p> Bienvenidos a la clase {numeroClase}</p>
-      </div>
-
+      <ItemListContainer greeting = {"Bienvenidos a "} marca= {" Once upon a dream"}/>
     </>
 );
-    
-    
-
 }
 
 export default App;

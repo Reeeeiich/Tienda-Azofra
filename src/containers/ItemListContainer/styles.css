@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Qwitcher+Grypen:wght@700&display=swap');
+.saludo{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+}
+
+.marca{
+    font-family: 'Qwitcher Grypen', cursive;
+    color: black;
+    font-size: 40px;
+}
