@@ -10,9 +10,16 @@ const ItemCount = ({stock, initial, onAdd}) =>{
         alert("No hay stock suficiente")
        }
     };
-};
-
-
+    const handleDecrement = ()=> {
+        if (count > initial ){
+            setCount(count-1);
+        }
+    }
+//Setea el contador en uno. 
+    const addCart = () => {
+        onAdd(count);
+        setCount(initial);
+    }
 
 useEffect(() => {
 
@@ -26,10 +33,15 @@ useEffect(()=>{
 }, [count]);
 
 return(
-    <div>
-        <h2>{count}</h2>
-        <button onClick={handleAdd}>Click +</button>
+    <div className='contenedor_contador'>
+        <div className='clicks_container'>
+            <button className='decrecer' onClick = {handleDecrement}>-</button>
+            <h2 className='contador'>{count}</h2>
+            <button className='aumento' onClick={handleAdd}>+</button>
+        </div>
+        <button className='add' onClick={addCart}>Agregar al carrito</button>
     </div>
 );
+};
 
 export default ItemCount;
