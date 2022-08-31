@@ -85,10 +85,9 @@
 .contenedor_contador{
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
 }
 .clicks_container{
-    margin-right: 55px;
     display:flex;
     align-items: center;
 }

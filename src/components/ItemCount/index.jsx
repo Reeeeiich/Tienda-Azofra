@@ -22,7 +22,6 @@ const ItemCount = ({stock, initial, onAdd}) =>{
     }
 
 useEffect(() => {
-
     //El array de dependencias vacío implica que el callback se ejecutará cuando se MONTA el componente por UNICA vez.
     console.log("Se montó el ItemCount");
 }, []
