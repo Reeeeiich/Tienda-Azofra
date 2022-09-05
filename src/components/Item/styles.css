@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Qwitcher+Grypen:wght@700&display=swap');
+.card{
+    display: flex;
+    width: 18rem; 
+    margin: 1rem;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.card-title{
+    font-weight: bold;
+    text-align: center;
+}
+
+.price_item{
+    text-align: end;
+}
+
+.btn{
+    background-color: initial;
+    background-image: radial-gradient(#b56efb 0, #f79ad9 100%);
+    border-radius: 5px;
+    border-style: none;
+    box-shadow: rgba(245, 244, 247, .25) 0 1px 1px inset;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    height: 60px;
+    line-height: 60px;
+    margin: 15px;
+    outline: 0;
+    text-align: center;
+    transition: all .3s cubic-bezier(.05, .03, .35, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: bottom;
+    width: 190px;
+}
+
+.btn:hover {
+    color:black;
+    opacity: .7;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .btn {
+      text-align: center;
+      font-size: 14px;
+      height: 55px;
+      line-height: 55px;
+      width: 150px;
+    }
+  }
