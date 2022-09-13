@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Qwitcher+Grypen:wght@700&display=swap');
+
 .card{
-    display: flex;
     width: 18rem; 
     margin: 1rem;
     font-family: 'DM Sans', sans-serif;
+    cursor: pointer;
 }
 
 .card-title{
