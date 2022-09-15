@@ -3,19 +3,21 @@
 .contenedor_detail{
     display: flex;
     flex-direction: row-reverse;
-    gap: 20rem;
+    margin-top: 3rem;
+    gap: 30rem;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 
 .contenedor_titulo{
     display:flex;
     flex-direction: column;
-    justify-content: space-between;
-
 }
 
 
 .titulo_producto{
+    margin: 3rem;
     font-size: 35px;
     margin-top: 30px;
     margin-top: 50px;
@@ -25,19 +27,22 @@
 
 .descripcion_producto{
     margin-right: 20px;
+    margin-top: 2rem;
     font-family: 'DM Sans', sans-serif;
     font-size: 18px;
 }
 
 .imagen_producto{
-    height: 500px;
-    margin: 20px;
-    margin-left: 60px;
+    width: auto;
 }
 
 .precio_producto{
     font-size: 35px;
     font-family: 'DM Sans', sans-serif;
     text-align: center;
+}
+
+.contenedor_contador{
+    margin-top: 2rem;
 }
 
