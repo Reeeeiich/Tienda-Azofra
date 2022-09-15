@@ -16,16 +16,25 @@ const NavBar= ()=> {
                 <div className="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul className="navbar-nav">
                     <li className="nav-item">
-                    <Link to="/category/inicio" className="nav-link" aria-current="page">Inicio</Link>
+                    <Link to="/" className="nav-link" aria-current="page">Inicio</Link>
                     </li>
                     <li className="nav-item">
-                    <Link to="/category/ojos" className="nav-link">Ojos</Link>
+                    <Link to="/category/smartphones" className="nav-link">Smartphones</Link>
                     </li>
                     <li className="nav-item">
-                    <Link to="/category/piel" className="nav-link">Piel</Link>
+                    <Link to="/category/laptops" className="nav-link">Laptops</Link>
                     </li>
                     <li className="nav-item">
-                    <Link to="/category/labios" className="nav-link">Labios</Link>
+                    <Link to="/category/fragrances" className="nav-link">Colonias</Link>
+                    </li>
+                    <li className="nav-item">
+                    <Link to="/category/skincare" className="nav-link">Piel</Link>
+                    </li>
+                    <li className="nav-item">
+                    <Link to="/category/furniture" className="nav-link">Accesorios de casa</Link>
+                    </li>
+                    <li className="nav-item">
+                    <Link to="/category/groceries" className="nav-link">Comida</Link>
                     </li>
                 </ul>
                 </div>

@@ -8,12 +8,13 @@ function ItemDetailContainer() {
     const [productDetail, setProductDetail] = useState({});
     const {productId} = useParams();
     console.log(productId);
+
     useEffect (()=>{
     const getProducts = async () => {
         try {
-            const response = await fetch(`https://fakestoreapi.com/products/${productId}`);
+            const response = await fetch(`https://dummyjson.com/products/${productId}`);
             const data = await response.json();
-            setProductDetail(data)
+            setProductDetail(data);
         } catch (error) {
             console.log(error);
         }

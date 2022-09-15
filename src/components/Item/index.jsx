@@ -9,11 +9,10 @@ const Item = ({product}) => {
         navigate (`/detail/${product.id}`)
     }
         return (
-            
             <div className="card" onClick={handleNavigate}>
-                <img className="card-img-top" src={product.image} alt="Card image cap"/>
+                <img className="card-img-top" src={product.thumbnail} alt="Card image cap"/>
                 <div className="card-body">
-                    <h5 className="card-title">{product.nombre}</h5>
+                    <h5 className="card-title">{product.title}</h5>
                     <ul className="list-group list-group-flush">
                         <li className="list-group-item price_item">{product.price} €</li>
                         <li className="list-group-item">{product.description}</li>

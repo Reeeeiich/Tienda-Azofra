@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Qwitcher+Grypen:wght@700&display=swap');
-
+.contenedor_lista{
+  display:flex;
+  flex-wrap: wrap;
+  margin-left: 50px;
+  margin-top: 40px;
+}
 .card{
     width: 18rem; 
     margin: 1rem;

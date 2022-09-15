@@ -1,9 +1,8 @@
 import React from "react";
 import ItemCount from "../../components/ItemCount";
-import { useState } from 'react';
-import { useEffect } from "react";
 
-function ItemCountContainer({greeting}) {
+
+function ItemCountContainer() {
     const agregarAlCarrito = (cantidad) => {
         console.log(`Se agregó la cantidad ${cantidad} al carrito`);
     }

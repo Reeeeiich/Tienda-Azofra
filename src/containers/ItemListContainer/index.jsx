@@ -1,4 +1,5 @@
 import React from "react";
+
 import ItemList from '../../components/ItemList';
 import { useState } from 'react';
 import { useEffect } from "react";
@@ -11,24 +12,33 @@ const ItemListContainer = () => {
     const {categoryId} = useParams();
 
     console.log(categoryId);
+
+
     useEffect(()=>{          
         ( async ()=> {
             try {
-                const response = await fetch("https://fakestoreapi.com/products");
+                if(categoryId) {
+                const response = await fetch(`https://dummyjson.com/products/category/${categoryId}`);
                 const productos = await response.json();
-                setProducts(productos);
+                setProducts(productos.products);
+                } else{
+                const response = await fetch("https://dummyjson.com/products");
+                const productos = await response.json();
+                setProducts(productos.products);
+                }
+                
             } catch (error) {
                 console.log(error)
             }
         })()
-}, [])
+}, [categoryId])
 
     console.log(productos);
     
     return (
-        <div>
+        <>
             <ItemList products = {productos}/>
-        </div>
+        </>
     )
 }
 
