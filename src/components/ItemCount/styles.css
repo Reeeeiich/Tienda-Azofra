@@ -44,7 +44,7 @@
   transform: translateY(2px);
 }
 
-.add { 
+.add, .finalizar_compra { 
   background-color: initial;
   background-image: radial-gradient(#b56efb 0, #f79ad9 100%);
   border-radius: 5px;
@@ -69,13 +69,13 @@
   width: 190px;
 }
 
-.add:hover {
+.add:hover, .finalizar_compra:hover {
   color:black;
   opacity: .7;
 }
 
 @media screen and (max-width: 1000px) {
-  .add {
+  .add, .finalizar_compra {
     font-size: 14px;
     height: 55px;
     line-height: 55px;
@@ -96,3 +96,4 @@
     text-align: center;
     font-size: 15px;
 }
+

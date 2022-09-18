@@ -2,8 +2,8 @@ import React from 'react'
 import ItemCountContainer from '../../containers/ItemCountContainer';
 import './styles.css';
 const ItemDetail = ({product}) => {
-    
   return (
+
     <>
     
     <div className='contenedor_detail'>
