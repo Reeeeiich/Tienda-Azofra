@@ -19,22 +19,13 @@ const NavBar= ()=> {
                     <Link to="/" className="nav-link" aria-current="page">Inicio</Link>
                     </li>
                     <li className="nav-item">
-                    <Link to="/category/smartphones" className="nav-link">Smartphones</Link>
+                    <Link to="/category/labios" className="nav-link">Labiales</Link>
                     </li>
                     <li className="nav-item">
-                    <Link to="/category/laptops" className="nav-link">Laptops</Link>
+                    <Link to="/category/piel" className="nav-link">Skincare</Link>
                     </li>
                     <li className="nav-item">
-                    <Link to="/category/fragrances" className="nav-link">Colonias</Link>
-                    </li>
-                    <li className="nav-item">
-                    <Link to="/category/skincare" className="nav-link">Piel</Link>
-                    </li>
-                    <li className="nav-item">
-                    <Link to="/category/furniture" className="nav-link">Accesorios de casa</Link>
-                    </li>
-                    <li className="nav-item">
-                    <Link to="/category/groceries" className="nav-link">Comida</Link>
+                    <Link to="/category/ojos" className="nav-link">Ojos</Link>
                     </li>
                 </ul>
                 </div>

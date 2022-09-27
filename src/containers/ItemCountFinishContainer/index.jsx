@@ -6,18 +6,22 @@ import "../../components/ItemCount/styles.css";
 import {Shop} from "../../context/ShopProvider";
 
 function ItemCountContainer({product}) {
+  console.log("producto", product);
     const [qty, setQty] = useState(0); 
     const navigate = useNavigate();
 
     const {addItem} =useContext(Shop);
-
+    console.log("añadir item", addItem)
     const addCart = (quantity) => {
+      
       setQty(quantity);
       }
 
       const handleFinish = () => {
         const productToSave = {...product, quantity: qty}
         addItem(productToSave);
+        console.log("Producto guardado", productToSave);
+        console.log("añadir item 2", addItem);
         navigate('/cart')
 
       }

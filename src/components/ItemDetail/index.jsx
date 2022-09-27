@@ -8,7 +8,7 @@ const ItemDetail = ({product}) => {
     
     <div className='contenedor_detail'>
         <div className='contenedor_titulo'>
-        <h1 className='titulo_producto'>{product.title}</h1>
+        <h1 className='titulo_producto'>{product.name}</h1>
         <h3 className='precio_producto' >{product.price}€</h3>  
         <p className='descripcion_producto'>{product.description}</p>
         <div className='contador_producto'>
@@ -17,7 +17,7 @@ const ItemDetail = ({product}) => {
         </div>
 
         <div className='contenedor_datos'>
-        <img className = "imagen_producto" src={product.thumbnail} alt="" />
+        <img className = "imagen_producto" src={product.image} alt="" />
         </div>
     </div>
     </>
