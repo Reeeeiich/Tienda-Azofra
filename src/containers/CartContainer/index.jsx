@@ -2,6 +2,7 @@ import React from 'react'
 import { useContext } from 'react';
 import { Shop } from '../../context/ShopProvider';
 import { DataGrid } from '@mui/x-data-grid';
+import { Button } from '@mui/material';
 
 const Cart =() =>  {
 
@@ -18,7 +19,7 @@ const Cart =() =>  {
   const renderRemoveButton = (item) => {
     const product = item.value
     return (
-      <button onClick={()=>removeItem(product)} variant = "contained" color ="error">Eliminar</button>
+      <Button onClick={()=>removeItem(product)} variant = "contained" color ="error">Eliminar</Button>
     )
   }
 const columns = [
@@ -54,7 +55,7 @@ console.log("Item", item);
         pageSize={5}
         rowsPerPageOptions={[5]}
       />
-      <button onClick = {clearCart} color= "error" variant="outlined">Limpiar carrito</button>
+      <Button onClick = {clearCart} color= "error" variant="outlined">Limpiar carrito</Button>
     </div>
   );
   }

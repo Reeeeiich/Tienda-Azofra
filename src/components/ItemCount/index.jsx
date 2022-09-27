@@ -40,6 +40,7 @@ return(
             <button className='aumento' onClick={handleAdd}>+</button>
         </div>
         <button className='add' onClick={addCart}>Agregar al carrito</button>
+        
     </div>
 );
 };
