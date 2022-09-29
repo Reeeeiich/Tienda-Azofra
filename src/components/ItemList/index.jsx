@@ -6,10 +6,13 @@ import '../Item/styles.css';
 const ItemList = ({products}) => {
   return (
     <div className='contenedor_lista'>
-      {products.map(product => {
+      {products.length ? products.map(product => {
         
         return <Item key ={product.id} product= {product}/>
-      })}
+      })
+      : 
+      <h2>Loading...</h2>
+      }
     </div>
   )
 }
