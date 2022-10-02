@@ -12,27 +12,22 @@ const Cart =() =>  {
 
   const renderImage = (image) => {
     return(
-      <img src={image.value} alt="cart-product" style={{height: '100px'}}></img>
+      <img src={image.value} alt="cart-product" style={{height: '50px'}}></img>
     )
   }
 
   const renderRemoveButton = (item) => {
     const product = item.value
     return (
-      <Button onClick={()=>removeItem(product)} variant = "contained" color ="error">Eliminar</Button>
+      <Button onClick={() => removeItem(product)} variant="contained" color="error"> Eliminar Item</Button>
     )
   }
 const columns = [
   { field : 'id', headerName: 'Id', width: 200},
-  { field: 'image', headerName: 'Imagen', width: 250, renderCell: renderImage},
+  { field: 'image', headerName: 'Imagen', width: 150, renderCell: renderImage},
   { field: 'name', headerName: 'Producto', width: 130 },
   { field: 'price', headerName: 'Cantidad', width: 100 },
-  {
-    field: 'remove',
-    headerName: 'Eliminar',
-    renderCell : renderRemoveButton,
-    width: 120,
-  },
+  {field: 'remove', headerName: 'Eliminar', renderCell : renderRemoveButton, width: 220},
 ];
 
 const filas = [];

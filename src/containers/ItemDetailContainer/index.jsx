@@ -11,6 +11,7 @@ function ItemDetailContainer() {
     const {productId} = useParams();
 
     useEffect (()=>{
+        
     const getProducts = async () => {
         try {
             const docRef = doc(db, "products", productId);
