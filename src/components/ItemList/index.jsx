@@ -1,6 +1,7 @@
 import React from 'react'
 import Item from '../Item';
 import '../Item/styles.css';
+import { CircularProgress } from '@mui/material';
 
 
 const ItemList = ({products}) => {
@@ -11,7 +12,7 @@ const ItemList = ({products}) => {
         return <Item key ={product.id} product= {product}/>
       })
       : 
-      <h2>Loading...</h2>
+      <CircularProgress color="secondary" />
       }
     </div>
   )

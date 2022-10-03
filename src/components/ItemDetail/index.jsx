@@ -37,7 +37,7 @@ const ItemDetail = ({product}) => {
                     
                     <div className='contenedor_finalizar'><button className='finalizar_compra' onClick={handleFinish}>Finalizar compra</button></div>
                 ) : (
-                    <ItemCount stock={10} initial={1} onAdd={addCart} />
+                    <ItemCount stock={product.stock} initial={1} onAdd={addCart} />
                 )}
           </div>   
         </div>
