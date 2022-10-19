@@ -5,6 +5,7 @@ import ItemDetail from '../../components/ItemDetail';
 import { useParams } from 'react-router-dom';
 import { db } from "../../firebase/config";
 import { doc, getDoc } from "firebase/firestore";
+import Swal from 'sweetalert2';
 
 function ItemDetailContainer() {
     const [productDetail, setProductDetail] = useState({});
@@ -17,18 +18,18 @@ function ItemDetailContainer() {
             const docRef = doc(db, "products", productId);
             const docSnap = await getDoc(docRef);
             if (docSnap.exists()) {
-                console.log("Document data:", docSnap.data());
                 setProductDetail({id: docSnap.id, ...docSnap.data()});
                 
         } 
             else {
                 //doc.data() will be undefined in this case
-                console.log("No such document!");
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: '¡Algo fue mal, item no encontrado',
+                    footer: '<a href="/">Pulse aquí y vuelva a inicio</a>',
+                  })
             }
-        
-
-           // const response = await fetch(`https://dummyjson.com/products/${productId}`);
-            //const data = await response.json();
             
         } catch (error) {
             console.log(error);

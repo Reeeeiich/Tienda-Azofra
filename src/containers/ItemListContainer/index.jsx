@@ -13,9 +13,6 @@ const ItemListContainer = () => {
 
     const {categoryId} = useParams();
 
-    console.log(categoryId);
-
-
     useEffect(()=>{          
         ( async ()=> {
             try {
@@ -54,11 +51,8 @@ const ItemListContainer = () => {
             });
             setProducts(productosFirebase);
 
-                //const response = await fetch(`https://dummyjson.com/products/category/${categoryId}`);
+                
                 } else{
-                //const response = await fetch("https://dummyjson.com/products");
-                //const productos = await response.json();
-                //setProducts(productos.products);
                     //Se llama a firebase 
                     const querySnapshot = await getDocs(q);
                     const productosFirebase = [];
@@ -67,7 +61,7 @@ const ItemListContainer = () => {
                     // doc.data() is never undefined for query doc snapshots
                     console.log(doc.id, " => ", doc.data());
                     productosFirebase.push({id: doc.id, ...doc.data()});
-                    });
+                    }); 
                     setProducts(productosFirebase);
                 }                
             } catch (error) {

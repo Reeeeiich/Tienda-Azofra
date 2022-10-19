@@ -1,0 +1,14 @@
+.contenedor_footer{
+    padding: 5rem;
+    background-color: black;
+    margin-top: 8rem;
+    
+}
+
+.contenedor_drch{
+    display:flex;
+    justify-content: center;
+}
+.derechos{
+    color: white;
+}

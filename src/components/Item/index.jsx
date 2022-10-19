@@ -17,7 +17,8 @@ const Item = ({product}) => {
                         <li className="list-group-item price_item">{product.price} €</li>
                         <li className="list-group-item">{product.description}</li>
                     </ul>
-                    <a href="#" className="btn btn-primary">Añadir al carrito</a>
+                    <a href="#" className="btn btn-primary">Ver detalle</a>
+                   
                 </div>
             </div> 
            

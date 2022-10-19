@@ -20,6 +20,7 @@ const ItemCount = ({stock, initial, onAdd}) =>{
     const addCart = () => {
         onAdd(count);
         setCount(initial);
+        
     }
 
 useEffect(() => {
@@ -39,7 +40,7 @@ return(
             <h2 className='contador'>{count}</h2>
             <button className='aumento' onClick={handleAdd}>+</button>
         </div>
-        <button className='add' onClick={addCart}>Agregar al carrito</button>
+        <button className='add' onClick={addCart}>¡Lo quiero!</button>
         
     </div>
 );

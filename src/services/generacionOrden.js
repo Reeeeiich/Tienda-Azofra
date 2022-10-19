@@ -1,9 +1,12 @@
-const generarOrden = (nombre, email, telefono, cart, total) => {
+const generarOrden = (nombre, apellido, usuario, email, direccion, numero, cart, total) => {
     return{
         buyer: {
-            nombre: nombre, 
-            email: email,
-            telefono: telefono,
+            Nombre: nombre, 
+            Apellido: apellido,
+            Usuario: usuario,
+            Email: email,
+            Dirección: direccion,
+            Numero: numero
         },
         items: cart,
         total: total, 
